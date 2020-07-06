@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Text Animation</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		section {
+			height: 100vh;
+			background: #000;
+		}
+		video{
+			object-fit: cover;
+		}
+
+		h1 {
+			color: azure;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+			text-align: center;
+			font-size: 4em;
+			font-family: sans-serif;
+			letter-spacing: .1em;
+			text-shadow: 2px 2px 6px #bbacac;
+		}
+
+		h1 span {
+			opacity: 0;
+			display: inline-block;
+			animation: text 1s infinite alternate;
+		}
+
+		@keyframes text {
+			0% {
+				opacity: 0;
+				transform: rotateY(45deg);
+				filter: blur(10px);
+			}
+			50%{
+				opacity: .90;
+				transform: rotateZ(120deg);
+				filter: blur(10px);
+			}
+			100% {
+				opacity: 1;
+				transform: rotateY(0deg);
+				filter: blur(0);
+			}
+
+			
+		}
+		h1 span:nth-child(1) {
+				animation-delay: 1s;
+			color:violet;
+			}
+
+			h1 span:nth-child(2) {
+				animation-delay: 2s;
+				color:blueviolet;
+				
+			}
+
+			h1 span:nth-child(3) {
+				animation-delay: 2.5s;
+				color:violet;
+			}
+
+			h1 span:nth-child(4) {
+				animation-delay: 3s;
+				color:rgba( 52, 202, 52, 0.798 );
+			}
+
+			h1 span:nth-child(5) {
+				animation-delay: 3.5s;
+				color:rgba( 26, 79, 46, 0.798 );
+			}
+
+			h1 span:nth-child(6) {
+				animation-delay: 3.75s;
+				color:rgba(57, 106, 57, 0.798);
+			}
+
+			h1 span:nth-child(7) {
+				animation-delay: 4s;
+				color:rgba( 52, 209, 59, 0.798 );
+			}
+
+			h1 span:nth-child(8) {
+				animation-delay: 4.25s;
+				color: aqua;
+				
+			}
+
+			h1 span:nth-child(9) {
+				animation-delay: 4.50s;
+				color:violet;
+			}
+
+			h1 span:nth-child(10) {
+				animation-delay: 4.75s;
+				color:cornflowerblue;
+			}
+
+			h1 span:nth-child(11) {
+				animation-delay: 5s;
+				color:darkblue;
+			}
+
+			h1 span:nth-child(12) {
+				animation-delay: 5.25s;
+				color: dimgrey;
+			}
+
+			h1 span:nth-child(13) {
+				animation-delay: 5.50s;
+				color: darkgoldenrod;
+			}
+		    h1 span:nth-child(14) {
+				animation-delay: 5.75s;
+				color:magenta;
+			}
+
+	</style>
+
+
+</head>
+
+<body>
+	<section>
+		<video src="smoke.mp4" autoplay muted loop="true"></video>
+		<h1>
+			<span>M</span>
+			<span>D</span>
+			<span>S</span>
+			<span>A</span>
+			<span>I</span>
+			<span>F</span>
+			<span>U</span>
+			<span>R</span>
+			<span>R</span>
+			<span>A</span>
+			<span>H</span>
+			<span>M</span>
+			<span>A</span>
+			<span>N</span>
+		</h1>
+	</section>
+</body>
+
+</html>
